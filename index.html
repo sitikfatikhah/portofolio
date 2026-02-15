@@ -1,11 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullstack Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    portofolio pages ulfa
+
+<body class="bg-gray-950 text-gray-200 font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-gray-900/80 backdrop-blur-md shadow-lg z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-white">Siti K Fatikhah</h1>
+      <div class="space-x-6 hidden md:block">
+        <a href="#about" class="hover:text-indigo-400 transition">About</a>
+        <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center justify-center text-center px-6">
+    <div>
+      <h2 class="text-4xl md:text-6xl font-bold mb-6">
+        Fullstack Laravel & React Developer
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+        I build scalable web applications with Laravel backend and modern React frontend.
+        Clean architecture, secure API, and elegant UI.
+      </p>
+      <a href="#projects"
+         class="bg-indigo-600 hover:bg-indigo-500 px-8 py-3 rounded-lg text-white font-semibold transition shadow-lg">
+        View My Work
+      </a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 bg-gray-900">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6">About Me</h3>
+      <p class="text-gray-400 leading-relaxed">
+        I am a professional fullstack developer specializing in Laravel, REST API development,
+        and React frontend applications. I focus on performance, scalability, and clean code architecture.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12">Tech Stack</h3>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-4 text-indigo-400">Backend</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>Laravel</li>
+            <li>REST API</li>
+            <li>MySQL</li>
+            <li>Authentication (JWT / Sanctum)</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-4 text-indigo-400">Frontend</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>React JS</li>
+            <li>Tailwind CSS</li>
+            <li>Next.js</li>
+            <li>Responsive UI</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-4 text-indigo-400">Tools</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>Git & GitHub</li>
+            <li>Docker</li>
+            <li>Postman</li>
+            <li>CI/CD Deployment</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-24 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12">Featured Projects</h3>
+
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-indigo-500/20 transition">
+          <div class="relative overflow-hidden">
+            <img
+              src="public/import-app.JPG"
+              alt="Import Tracking System"
+              class="w-full h-58 object-cover transition duration-500 mb-4 group-hover:scale-110">
+              <!-- overlay -->
+            <div class="absolute bg-linear-to-t from-black/50 to-transparent rounded-md"></div>
+            <h4 class="text-xl font-semibold mb-4">Import Tracking System</h4>
+          </div>
+          <p class="text-gray-400 mb-4">
+            Laravel-based enterprise logistics system integrated with customs API and tracking module.
+          </p>
+          <span class="text-indigo-400 text-sm">Laravel • React • MySQL</span>
+        </div>
+
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-indigo-500/20 transition">
+          <div class="relative overflow-hidden">
+            <img
+              src="public/point-of-sales.JPG"
+              alt="Point Of Sales System"
+              class="w-full h-58 object-cover transition duration-500 mb-4 group-hover:scale-110">
+              <!-- overlay -->
+            <div class="absolute bg-linear-to-t from-black/50 to-transparent rounded-md"></div>
+            <h4 class="text-xl font-semibold mb-4">Point Of Sales</h4>
+          </div>
+          <p class="text-gray-400 mb-4">
+            Fullstack point of sales system with inventory management and reporting.
+          </p>
+          <span class="text-indigo-400 text-sm">Laravel • React • MySQL</span>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-indigo-500/20 transition">
+          <div class="relative overflow-hidden">
+            <img
+              src="public/itHelpdesk.JPG"
+              alt="IT Helpdesk System"
+              class="w-full h-58 object-cover transition duration-500 mb-4 group-hover:scale-110">
+              <!-- overlay -->
+            <div class="absolute bg-linear-to-t from-black/50 to-transparent rounded-md"></div>
+            <h4 class="text-xl font-semibold mb-4">IT Helpdesk System</h4>
+          </div>
+          <p class="text-gray-400 mb-4">
+            Fullstack IT helpdesk system with ticket management, Asset Management and user support.
+          </p>
+          <span class="text-indigo-400 text-sm">Laravel • React • MySQL</span>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-indigo-500/20 transition">
+          <div class="relative overflow-hidden">
+            <img
+              src="public/laravel.JPG"
+              alt="Import Tracking System"
+              class="w-full h-58 object-cover transition duration-500 mb-4 group-hover:scale-110">
+              <!-- overlay -->
+            <div class="absolute bg-linear-to-t from-black/50 to-transparent rounded-md"></div>
+            <h4 class="text-xl font-semibold mb-4">Rest API</h4>
+          </div>
+          <p class="text-gray-400 mb-4">
+            Fullstack REST API with authentication, validation, and database integration.
+          </p>
+          <span class="text-indigo-400 text-sm">Laravel • Postman • MySQL</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-6">Let's Work Together</h3>
+      <p class="text-gray-400 mb-8">
+        Available for freelance and full-time opportunities.
+      </p>
+      <a href="mailto:khamidatul94wnsb@gmail.com"
+         class="bg-indigo-600 hover:bg-indigo-500 px-8 py-3 rounded-lg text-white font-semibold transition shadow-lg gap-4 inline-flex items-center">
+        Contact Via Email
+      </a>
+      <a href="https://wa.me/628138332634"
+         class="bg-indigo-600 hover:bg-indigo-500 px-8 py-3 rounded-lg text-white font-semibold transition shadow-lg">
+        Contact Via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 py-6 text-center text-gray-500 text-sm">
+    © 2026 Siti K Fatikhah — Fullstack Developer
+  </footer>
+
 </body>
 </html>
